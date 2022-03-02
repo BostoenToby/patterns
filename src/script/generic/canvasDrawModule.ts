@@ -3,6 +3,8 @@ export const canvasDrawModule = (() => {
     let context: CanvasRenderingContext2D | null = null
     const FULL_CIRCLE = Math.PI * 2
 
+    const getContext = () => context
+
     const scaleCanvasToParentElement = () => {
         const { clientHeight, clientWidth } = context.canvas.parentElement
 
@@ -38,5 +40,6 @@ export const canvasDrawModule = (() => {
       setup,
       circle,
       clearCanvas,
+      getContext,
     }
   })()

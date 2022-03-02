@@ -13,7 +13,7 @@ export const dotModule = (function() {
         for (let i = 0; i<gridSize; i++){
             for (let j = 0; j<gridSize; j++){
                 console.log(i, j)
-                canvasDrawModule.circle(i * gutters.x, j * gutters.y, 20, 'black')
+                canvasDrawModule.circle((i+1) * gutters.x, (j+1) * gutters.y, 5, 'black')
             }
         }
     }
